@@ -1,3 +1,4 @@
+// src/domain/ports/ProductRepository.ts
 import { Product } from '../models/Product';
 
 export interface ProductRepository {

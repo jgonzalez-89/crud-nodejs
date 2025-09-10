@@ -1,3 +1,4 @@
+// src/domain/models/Product.ts
 export class Product {
     constructor(
       public readonly id: number | null,
