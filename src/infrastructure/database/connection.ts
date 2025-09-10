@@ -2,11 +2,11 @@
 import { Pool } from 'pg';
 
 export const pool = new Pool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'user',
-  password: process.env.DB_PASSWORD || 'password',
-  database: process.env.DB_NAME || 'products_db',
-  port: parseInt(process.env.DB_PORT || '5432'),
+  host: process.env.DB_HOST ?? 'localhost',
+  user: process.env.DB_USER ?? 'user',
+  password: process.env.DB_PASSWORD ?? 'password',
+  database: process.env.DB_NAME ?? 'products_db',
+  port: Number(process.env.DB_PORT ?? 5432),
 });
 
 // Verificar conexión
